@@ -13,14 +13,14 @@ function Veg({ search }) {
   const vegItems = { 
     Paneer: 
     [
-      { name: "Paneer Butter Masala", price: 220, img: "..." }, 
-      { name: "Palak Paneer", price: 200, img: "..." }, 
-      { name: "Kadai Paneer", price: 220, img: "..." }, 
-      { name: "Shahi Paneer", price: 240, img: "..." }, 
-      { name: "Paneer Tikka", price: 220, img: "..." }, 
-      { name: "Paneer Bhurji", price: 200, img: "..." }, 
-      { name: "Paneer Pizza", price: 280, img: "..." }, 
-      { name: "Paneer Manchurian", price: 180, img: "..." }, 
+      { name: "Paneer Butter Masala", price: 220, img: "https://img.freepik.com/premium-photo/classic-paneer-butter-masala_1264082-137.jpg?w=2000" }, 
+      { name: "Palak Paneer", price: 200, img: "https://img.freepik.com/premium-photo/indian-palak-paneer-with-spinach-cottage-cheese_1072167-2540.jpg?w=2000" }, 
+      { name: "Kadai Paneer", price: 220, img: "http://1.bp.blogspot.com/_GlkYxavu-Ts/StVnaw3GCJI/AAAAAAAAARM/2b3PenJbX7g/w1200-h630-p-k-no-nu/kadhai-paneer1.JPG" }, 
+      { name: "Shahi Paneer", price: 240, img: "https://1.bp.blogspot.com/-KzKj1aBe7-k/XeeVsF5b-2I/AAAAAAAAEII/XOksle75D5IKvng5l7OMWaX9K_0hCQX7wCLcBGAsYHQ/s1600/shahi%2Bpaneerr.jpg" }, 
+      { name: "Paneer Tikka", price: 220, img: "https://tandoormorni.com/wp-content/uploads/2025/04/Smoky-Tandoori-Paneer-Tikka-Delight.png" }, 
+      { name: "Paneer Bhurji", price: 200, img: "http://www.ezpzcooking.com/wp-content/uploads/2010/05/paneer-bhurji-featured.jpg" }, 
+      { name: "Paneer Pizza", price: 280, img: "https://cdn.grofers.com/assets/search/usecase/banner/paneer_makhani_pizza_01.png" }, 
+      { name: "Paneer Manchurian", price: 180, img: "https://orders.popskitchen.in/storage/2024/09/image-167.png" }, 
       { name: "Paneer Salad", price: 120, img: "..." },
     ], 
     Rice: 
