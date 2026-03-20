@@ -17,6 +17,7 @@ import About from "./About";
 import Contact from "./Contact";
 import UserLightningIcon from "./UserLightningIcon";
 import Order from "./Orders";
+import NotFound from "./NotFound";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -286,6 +287,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/orders" element={<Order />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+
+          
 
             
           </Routes>
