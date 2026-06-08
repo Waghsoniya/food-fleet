@@ -70,3 +70,35 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* for the arrow on the carousol */
+  .slick-prev,
+  .slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-prev {
+    left: 10px !important;
+  }
+
+  .slick-next {
+    right: 40px !important;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 45px !important;
+    opacity: 0.4 !important;
+    color: white !important;
+    transition: all 0.3s ease;
+  }
+
+/* hover effect on arrow */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  opacity: 1 !important;
+  transform: scale(1.2);
+}

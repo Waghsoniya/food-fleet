@@ -5,6 +5,7 @@ import Nonveg from "./Nonveg";
 import Starters from "./Starters";
 import Drinks from "./Drinks";
 import Desserts from "./Desserts";
+import Thali from "./Thali";
 import Cart from "./Cart";
 import Home from "./Home";
 import { ToastContainer } from "react-toastify";
@@ -138,7 +139,7 @@ function App() {
                   </Link>
 
                   {/* Profile */}
-                  <div className="relative">
+                 <div className="relative">
                     {!user ? (
                       <Link to="/login">
                         <UserLightningIcon />
@@ -148,11 +149,11 @@ function App() {
                         onClick={() => setProfileOpen(!profileOpen)}
                         className="cursor-pointer flex items-center gap-2"
                       >
-                        <UserLightningIcon />
+                        <UserLightningIcon /> 
                         {/* <FaUserCircle className="text-white text-3xl" /> */}
                         {/* <span className="hidden md:block">{user.name}</span> */}
-                      </div>
-                    )}
+                       </div>
+                    )} 
 
                     {user && profileOpen && (
                       <div className="absolute right-0 mt-3 w-32 bg-white text-black rounded-lg shadow-lg py-2">
@@ -165,7 +166,17 @@ function App() {
                       </div>
                     )}
                   </div>
-                </div>
+                </div>  
+
+
+              {/* Mobile menu Button */}
+              <button
+                className="md:hidden text-white text-2xl"
+                onClick={() => setMenuOpen(!menuOpen)}
+              >
+                  ☰
+              </button>
+
               </div>
 
               {/* Mobile Search */}
@@ -214,6 +225,14 @@ function App() {
                   >
                     Desserts
                   </Link>
+
+                  <Link
+                    className="hover:text-purple-300 text-white"
+                    to="/combos"
+                  >
+                    Combos
+                  </Link>
+
                   <Link
                     className="hover:text-purple-300 text-white"
                     to="/about"
@@ -226,7 +245,7 @@ function App() {
                   >
                     ContactUs
                   </Link>
-                   <Link
+                  <Link
                     className="hover:text-purple-300 text-white"
                     to="/orders"
                   >
@@ -254,6 +273,7 @@ function App() {
                     <Link to="/starters">Starters</Link>
                     <Link to="/drinks">Drinks</Link>
                     <Link to="/desserts">Desserts</Link>
+                    <Link to="/combos">Combos</Link>
                     <Link to="/about">AboutUs</Link>
                     <Link to="/contact">ContactUs</Link>
                     <Link to="/orders">Orders</Link>
@@ -281,6 +301,7 @@ function App() {
             <Route path="/starters" element={<Starters search={search}/>} />
             <Route path="/drinks" element={<Drinks search={search}/>} />
             <Route path="/desserts" element={<Desserts search={search}/>} />
+            <Route path="/combos" element={<Thali search={search} />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />            
