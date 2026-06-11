@@ -63,7 +63,7 @@ function Desserts() {
     ];
   return (
     <>
-        <div className='min-h-screen bg-gradient-to-br from-green-100 via-white to-green-50 p-6'>
+        <div className='min-h-screen bg-gradient-to-br from-pink-100 via-white to-rose-50 p-6'>
             {/* Title */}
             <h1 className='text-4xl font-bold text-center text-green-700 mb-10 mt-10'>
                 Desserts 🍰
